@@ -25,8 +25,14 @@
                         </table>
                         <button width="1" alignment="left" title="Add New Note" id="ZS2-MV-tmv">
                             <color key="backgroundColor" name="AccentColor"/>
+                            <connections>
+                                <action selector="addNewNote" destination="AgC-eL-Hgc" id="USU-ry-XFc"/>
+                            </connections>
                         </button>
                     </items>
+                    <connections>
+                        <outlet property="table" destination="7RH-N1-DGG" id="nL2-D6-snB"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="45" y="-10"/>

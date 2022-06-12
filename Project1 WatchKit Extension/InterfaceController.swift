@@ -12,9 +12,19 @@ import Foundation
 class InterfaceController: WKInterfaceController {
     
     @IBOutlet var table: WKInterfaceTable!
+    var notes = [String]()
     
     override func awake(withContext context: Any?) {
-        // Configure interface objects here.
+        table.setNumberOfRows(notes.count, withRowType: "Row")
+        for rowIndex in 0..<notes.count {
+            set(row: rowIndex, to: notes[rowIndex])
+        }
+    }
+    
+    func set(row rowIndex: Int, to text: String) {
+        guard let row = table.rowController(at: rowIndex) as?
+                NoteSelectRow else { return }
+        row.textLabel.setText(text)
     }
     
     override func willActivate() {

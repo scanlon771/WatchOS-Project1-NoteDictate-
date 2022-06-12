@@ -14,12 +14,15 @@
                     <items>
                         <table alignment="left" id="7RH-N1-DGG">
                             <items>
-                                <tableRow id="9Xy-Q9-H0i">
+                                <tableRow identifier="Row" id="9Xy-Q9-H0i" customClass="NoteSelectRow" customModule="Project1_WatchKit_Extension">
                                     <group key="rootItem" width="1" alignment="left" id="VbD-xn-KJj">
                                         <items>
                                             <label alignment="left" verticalAlignment="center" text="Label" id="Kmq-v3-5Ur"/>
                                         </items>
                                     </group>
+                                    <connections>
+                                        <outlet property="textLabel" destination="Kmq-v3-5Ur" id="wdw-Vu-bg2"/>
+                                    </connections>
                                 </tableRow>
                             </items>
                         </table>

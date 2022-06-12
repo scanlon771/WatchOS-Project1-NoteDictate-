@@ -12,7 +12,7 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Project1_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <table alignment="left" id="7RH-N1-DGG">
+                        <table alignment="left" pagingScroll="YES" id="7RH-N1-DGG">
                             <items>
                                 <tableRow identifier="Row" id="9Xy-Q9-H0i" customClass="NoteSelectRow" customModule="Project1_WatchKit_Extension">
                                     <group key="rootItem" width="1" alignment="left" id="VbD-xn-KJj">
@@ -22,6 +22,7 @@
                                     </group>
                                     <connections>
                                         <outlet property="textLabel" destination="Kmq-v3-5Ur" id="wdw-Vu-bg2"/>
+                                        <segue destination="HpW-ZX-k6F" kind="push" id="g80-gM-nGh"/>
                                     </connections>
                                 </tableRow>
                             </items>
@@ -39,6 +40,20 @@
                 </controller>
             </objects>
             <point key="canvasLocation" x="45" y="-10"/>
+        </scene>
+        <!--Detail Interface Controller-->
+        <scene sceneID="ZXE-oq-3NC">
+            <objects>
+                <controller id="HpW-ZX-k6F" customClass="DetailInterfaceController" customModule="Project1_WatchKit_Extension">
+                    <items>
+                        <label alignment="left" text="Label" numberOfLines="0" id="t5J-Sk-6Fz"/>
+                    </items>
+                    <connections>
+                        <outlet property="textLabel" destination="t5J-Sk-6Fz" id="sS6-rN-Eio"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="270" y="-10"/>
         </scene>
     </scenes>
     <resources>

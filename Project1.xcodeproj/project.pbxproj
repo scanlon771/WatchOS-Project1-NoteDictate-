@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4669AF7F2856746D0064274C /* DetailInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4669AF7E2856746D0064274C /* DetailInterfaceController.swift */; };
 		46F86905285564C7005E7D6E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F86904285564C7005E7D6E /* AppDelegate.swift */; };
 		46F86907285564C7005E7D6E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F86906285564C7005E7D6E /* SceneDelegate.swift */; };
 		46F86909285564C7005E7D6E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F86908285564C7005E7D6E /* ViewController.swift */; };
@@ -67,6 +68,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4669AF7E2856746D0064274C /* DetailInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInterfaceController.swift; sourceTree = "<group>"; };
 		46F86901285564C7005E7D6E /* Project1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46F86904285564C7005E7D6E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		46F86906285564C7005E7D6E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -155,6 +157,7 @@
 				46F86928285564CA005E7D6E /* InterfaceController.swift */,
 				46F8692A285564CA005E7D6E /* ExtensionDelegate.swift */,
 				46F8692C285564CA005E7D6E /* ComplicationController.swift */,
+				4669AF7E2856746D0064274C /* DetailInterfaceController.swift */,
 				46F8692E285564CB005E7D6E /* Assets.xcassets */,
 				46F86930285564CB005E7D6E /* Info.plist */,
 			);
@@ -307,6 +310,7 @@
 				46F8692B285564CA005E7D6E /* ExtensionDelegate.swift in Sources */,
 				46F86929285564CA005E7D6E /* InterfaceController.swift in Sources */,
 				46F8692D285564CA005E7D6E /* ComplicationController.swift in Sources */,
+				4669AF7F2856746D0064274C /* DetailInterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

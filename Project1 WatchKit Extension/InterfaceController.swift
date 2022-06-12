@@ -13,8 +13,15 @@ class InterfaceController: WKInterfaceController {
     
     @IBOutlet var table: WKInterfaceTable!
     var notes = [String]()
+    var savePath = InterfaceController.getDocumentsDirectory().appendingPathComponent("notes")
     
     override func awake(withContext context: Any?) {
+        do {
+            let data = try Data(contentsOf: savePath)
+            notes = try NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(data) as? [String] ?? [String]()
+        } catch {
+            // do nothing; notes is already an empty array
+        }
         table.setNumberOfRows(notes.count, withRowType: "Row")
         for rowIndex in 0..<notes.count {
             set(row: rowIndex, to: notes[rowIndex])
@@ -49,10 +56,22 @@ class InterfaceController: WKInterfaceController {
             
             // 5: append the new note to our array
             self.notes.append(result)
+            
+            do {
+                let data = try NSKeyedArchiver.archivedData(withRootObject: self.notes, requiringSecureCoding: false)
+                try data.write(to: self.savePath)
+            } catch {
+                print("Failed to save data: \(error.localizedDescription).")
+            }
         }
     }
     
     override func contextForSegue(withIdentifier segueIdentifier: String, in table: WKInterfaceTable, rowIndex: Int) -> Any? {
         return["index": String(rowIndex + 1), "note": notes[rowIndex]]
+    }
+    
+    static func getDocumentsDirectory() -> URL {
+        let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+        return paths[0]
     }
 }

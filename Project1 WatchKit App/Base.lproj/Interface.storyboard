@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="20037" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="20006"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Project1_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <table alignment="left" id="7RH-N1-DGG">
+                            <items>
+                                <tableRow id="9Xy-Q9-H0i">
+                                    <group key="rootItem" width="1" alignment="left" id="VbD-xn-KJj">
+                                        <items>
+                                            <label alignment="left" verticalAlignment="center" text="Label" id="Kmq-v3-5Ur"/>
+                                        </items>
+                                    </group>
+                                </tableRow>
+                            </items>
+                        </table>
+                        <button width="1" alignment="left" title="Add New Note" id="ZS2-MV-tmv">
+                            <color key="backgroundColor" name="AccentColor"/>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="45" y="-10"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
